@@ -6,6 +6,7 @@
 
 .container {
     padding: 2em 2em; 
+    
 }
 
 .container {
@@ -26,7 +27,7 @@
 .main-header {
     align-items: center;
     display: flex;
-    padding: 1em 2em; 
+    padding: 0.5em 2em; 
 }
 
 .header-title {
@@ -70,9 +71,9 @@ input {
 
 section {
     display: grid; 
-    grid-template-columns: repeat(6, 10rem);
-    grid-template-rows: repeat(4, 10rem);
-    grid-gap: 2em; 
+    grid-template-columns: repeat(6, 9rem);
+    grid-template-rows: repeat(4, 9rem);
+    grid-gap: 1.5em; 
 }
 
 .card {
@@ -128,9 +129,20 @@ section {
 
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8em;
+    font-size: 0.6em;
     margin: 0.5em;
     text-align: center;
 }
 
+
+@media screen and (min-width: 1800px) {
+   .game-plan {
+    width: 80%; 
+   }
+   section { 
+    grid-template-columns: repeat(6, 11rem);
+    grid-template-rows: repeat(4, 11rem);
+    grid-gap: 2em; 
+}
+}
 
