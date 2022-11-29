@@ -1,0 +1,136 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2em 2em; 
+}
+
+.container {
+    background-image: url(Css.assets/background-ga7ce11ac9_1920.jpg);
+    height: 88vh; 
+}
+
+.game-plan {
+    display: flex;
+    margin: 0 auto; 
+}
+.start-container {
+    display: flex; 
+    flex-direction: column;
+    width: 17em;
+}
+
+.main-header {
+    align-items: center;
+    display: flex;
+    padding: 1em 2em; 
+}
+
+.header-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5em;
+}
+
+.header-text {
+    margin: 0em 1em; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+.info-container {
+    margin: 0em 1em; 
+}
+button,
+input {
+    padding: 0.5em; 
+    border-radius: 5px;
+    margin: 0 0.5em 0.5em 0.5em; 
+    border-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.rematch-btn {
+    display: none; 
+    margin: 1em; 
+    width: 12.3em; 
+}
+
+
+.score-display-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: 1em; 
+
+}
+
+
+section {
+    display: grid; 
+    grid-template-columns: repeat(6, 10rem);
+    grid-template-rows: repeat(4, 10rem);
+    grid-gap: 2em; 
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    /* transform: rotateY(180deg); */
+    transition: all 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+.match {
+    visibility: hidden;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    /* border: 2px solid rgb(239, 236, 210); */
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.back {
+    background-color: white;
+    backface-visibility: hidden;
+}
+
+.game-info h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em; 
+    font-weight: 100; 
+    color:rgb(75, 75, 75);
+    margin-bottom: 0.4em;
+    margin-left: 0.8em;
+}
+
+.score-display-container {
+    /* border: 2px solid rgb(239, 236, 210); */
+    border-radius: 15px;
+    padding: 0.7em 1em;
+    background-color: white;
+    margin-left: 1em;
+    width: 15em; 
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+

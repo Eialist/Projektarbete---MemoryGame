@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="header-title">Memory</h1>
+      <p class="header-text">Minnesspelet för alla åldrar.</p>
+    </header>
+    <main class="container">
+      <div class="game-plan">
+        <section class="card-container"></section>
+        <div class="info-container">
+          <div class="start-container">
+            <input
+              type="text"
+              class="playerone-name-field"
+              placeholder="Spelare 1" />
+            <input
+              type="text"
+              class="playertwo-name-field"
+              placeholder="Spelare 2" />
+            <button class="game-start-btn">Starta Spel</button>
+          </div>
+          <div class="game-info">
+            <h3>
+              Nu är det
+              <label class="player-turn-lbl">'namn_på_spelare'</label> tur
+            </h3>
+
+            <div class="score-display-container">
+              <p>Poäng</p>
+              <p class="player-one-score"></p>
+              <p class="player-two-score"></p>
+            </div>
+            <button class="rematch-btn" onClick="window.location.reload()">
+              Spela igen
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      FE22 KYH Group Project 2022
+      <p>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/">www.flaticon.com</a>.
+      </p>
+    </footer>
+  </body>
+</html>
