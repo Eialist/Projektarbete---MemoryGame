@@ -86,51 +86,51 @@ function updateDisplays(players) {
 // an array with cards as objects
 const memoryCards = [{
     name: 'bee',
-    img: './assets/bee.png',
+    img: '/assets/bee.png',
 },
 {
     name: 'butterfly',
-    img: './assets/butterfly.png',
+    img: '/assets/butterfly.png',
 },
 {
     name: 'crab',
-    img: './assets/crab.png',
+    img: '/assets/crab.png',
 },
 {
     name: 'deer',
-    img: './assets/deer.png',
+    img: '/assets/deer.png',
 },
 {
     name: 'dog',
-    img: './assets/dog.png',
+    img: '/assets/dog.png',
 },
 {
     name: 'frog',
-    img: './assets/frog.png',
+    img: '/assets/frog.png',
 },
 {
     name: 'jellyfish',
-    img: './assets/jellyfish.png',
+    img: '/assets/jellyfish.png',
 },
 {
     name: 'koala',
-    img: './assets/koala.png',
+    img: '/assets/koala.png',
 },
 {
     name: 'owl',
-    img: './assets/owl.png',
+    img: '/assets/owl.png',
 },
 {
     name: 'pig',
-    img: './assets/pig.png',
+    img: '/assets/pig.png',
 },
 {
     name: 'snake',
-    img: './assets/snake.png',
+    img: '/assets/snake.png',
 },
 {
     name: 'whale',
-    img: './assets/whale.png',
+    img: '/assets/whale.png',
 },
 ]
 
