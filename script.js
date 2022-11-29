@@ -90,47 +90,47 @@ const memoryCards = [{
 },
 {
     name: 'butterfly',
-    img: './assets/butterfly.png',
+    img: './Assets/butterfly.png',
 },
 {
     name: 'crab',
-    img: './assets/crab.png',
+    img: './Assets/crab.png',
 },
 {
     name: 'deer',
-    img: './assets/deer.png',
+    img: './Assets/deer.png',
 },
 {
     name: 'dog',
-    img: './assets/dog.png',
+    img: './Assets/dog.png',
 },
 {
     name: 'frog',
-    img: './assets/frog.png',
+    img: './Assets/frog.png',
 },
 {
     name: 'jellyfish',
-    img: './assets/jellyfish.png',
+    img: './Assets/jellyfish.png',
 },
 {
     name: 'koala',
-    img: './assets/koala.png',
+    img: './Assets/koala.png',
 },
 {
     name: 'owl',
-    img: './assets/owl.png',
+    img: './Assets/owl.png',
 },
 {
     name: 'pig',
-    img: './assets/pig.png',
+    img: './Assets/pig.png',
 },
 {
     name: 'snake',
-    img: './assets/snake.png',
+    img: './Assets/snake.png',
 },
 {
     name: 'whale',
-    img: './assets/whale.png',
+    img: './Assets/whale.png',
 },
 ]
 
