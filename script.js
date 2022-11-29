@@ -86,7 +86,7 @@ function updateDisplays(players) {
 // an array with cards as objects
 const memoryCards = [{
     name: 'bee',
-    img: './assets/bee.png',
+    img: './Assets/bee.png',
 },
 {
     name: 'butterfly',
