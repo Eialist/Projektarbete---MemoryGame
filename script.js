@@ -75,7 +75,7 @@ gameStartBtn.addEventListener('click', activateGame);
 
 // function to update display 
 function updateDisplays(players) {
-    let currentPlayer = players[gameTurn];
+    currentPlayer = players[gameTurn];
     playerTurnLbl.innerText = currentPlayer.name; 
     playerOneScorePara.innerText = `${players[0].name}: ${players[0].score}`
     playerTwoScorePara.innerText = `${players[1].name}: ${players[1].score}`
@@ -199,6 +199,7 @@ function checkForMatch() {
     console.log("Checking for match");
     if (isFlipped.length == 2) {
         if (isFlipped[0].getAttribute('name') == isFlipped[1].getAttribute('name')) {
+            
             setTimeout(function() {
                 isFlipped[0].classList = 'match';
                 isFlipped[1].classList = 'match';
