@@ -169,7 +169,14 @@ cardGrid.forEach((item) => {
     });
 })
 
-
+function countingScores() {
+    currentPlayer.score = currentPlayer.score + 1;
+            if (gameTurn == 0) {
+                playerOneScorePara.innerText = `${players[0].name}: ${players[0].score}`
+            } else {
+                playerTwoScorePara.innerText = `${players[1].name}: ${players[1].score}`
+            }
+};
 
 function endGame() {
     // let match = document.querySelectorAll('.match');
@@ -206,15 +213,10 @@ function checkForMatch() {
                 isFlipped[0].classList.remove('is-flipped');
                 isFlipped[1].classList.remove('is-flipped');
             }, 2000);
-            currentPlayer.score = currentPlayer.score + 1;
-            if (gameTurn == 0) {
-                playerOneScorePara.innerText = `${players[0].name}: ${players[0].score}`
-            } else {
-                playerTwoScorePara.innerText = `${players[1].name}: ${players[1].score}`
-            }
-                
-            console.log("Equal");
+            
+            countingScores(); 
             endGame();
+            console.log("Equal");
             
         } else if (isFlipped[0].getAttribute('name') !== isFlipped[1].getAttribute('name')) {
             setTimeout(function() {
