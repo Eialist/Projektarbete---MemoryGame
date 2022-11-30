@@ -216,7 +216,6 @@ function checkForMatch() {
             console.log("Equal");
             endGame();
             
-        
         } else if (isFlipped[0].getAttribute('name') !== isFlipped[1].getAttribute('name')) {
             setTimeout(function() {
                 isFlipped[0].classList.remove('is-flipped');
