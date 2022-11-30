@@ -6,12 +6,11 @@
 
 .container {
     padding: 2em 2em; 
-    
 }
 
 .container {
     background-image: url(Css.assets/background-ga7ce11ac9_1920.jpg);
-    height: 88vh; 
+    height: 89vh; 
 }
 
 .game-plan {
@@ -134,15 +133,14 @@ footer {
     text-align: center;
 }
 
-
 @media screen and (min-width: 1800px) {
-   .game-plan {
-    width: 80%; 
-   }
-   section { 
-    grid-template-columns: repeat(6, 11rem);
-    grid-template-rows: repeat(4, 11rem);
-    grid-gap: 2em; 
-}
-}
+    .game-plan {
+        width: 80%;
+    }
+    section {
 
+        grid-template-columns: repeat(6, 11rem);
+        grid-template-rows: repeat(4, 11rem);
+        grid-gap: 2em; 
+    }
+}

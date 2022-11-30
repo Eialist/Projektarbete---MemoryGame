@@ -197,7 +197,7 @@ function endGame() {
 function checkForMatch() {
     let isFlipped = document.querySelectorAll('.is-flipped');
     console.log("Checking for match");
-    if (isFlipped.length === 2) {
+    if (isFlipped.length == 2) {
         if (isFlipped[0].getAttribute('name') == isFlipped[1].getAttribute('name')) {
             setTimeout(function() {
                 isFlipped[0].classList = 'match';
@@ -225,6 +225,6 @@ function checkForMatch() {
                 playerTurnLbl.innerText = currentPlayer.name;
             }, 1500);
             console.log("Not equal");
-        }
+        };
     }
 };
