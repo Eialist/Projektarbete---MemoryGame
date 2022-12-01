@@ -169,6 +169,8 @@ cardGrid.forEach((item) => {
     });
 })
 
+
+// function that gives score to player with matching pair
 function countingScores() {
     currentPlayer.score = currentPlayer.score + 1;
             if (gameTurn == 0) {
@@ -178,8 +180,8 @@ function countingScores() {
             }
 };
 
+// function that checks to see who won
 function endGame() {
-    // let match = document.querySelectorAll('.match');
     const winner = document.querySelector('.game-info > h3');
     console.log(players[0].name + ":" + players[0].score + " - " + players[1].name + ":" + players[1].score);
     if (players[0].score + players[1].score == 12) {
@@ -206,22 +208,21 @@ function checkForMatch() {
     console.log("Checking for match");
     if (isFlipped.length == 2) {
         if (isFlipped[0].getAttribute('name') == isFlipped[1].getAttribute('name')) {
-            
             setTimeout(function() {
-                isFlipped[0].classList = 'match';
-                isFlipped[1].classList = 'match';
-                isFlipped[0].classList.remove('is-flipped');
-                isFlipped[1].classList.remove('is-flipped');
-            }, 2000);
-            
+                isFlipped.forEach((card) => {
+                    card.classList = 'match';
+                    card.classList.remove('is-flipped');
+                    });
+                }, 1500);
             countingScores(); 
             endGame();
             console.log("Equal");
             
         } else if (isFlipped[0].getAttribute('name') !== isFlipped[1].getAttribute('name')) {
             setTimeout(function() {
-                isFlipped[0].classList.remove('is-flipped');
-                isFlipped[1].classList.remove('is-flipped');
+                isFlipped.forEach((card) => {
+                    card.classList.remove('is-flipped');
+                    });
                 gameTurn = (gameTurn + 1) % 2;
                 currentPlayer = players[gameTurn];
                 playerTurnLbl.innerText = currentPlayer.name;
